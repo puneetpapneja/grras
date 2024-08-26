@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['plugin:@typescript-eslint/strict'],
   rules: {
-    'no-console': 'error',
+    'no-console': 'warn',
   },
+  ignorePatterns: ["src/assets/*"]
 }
