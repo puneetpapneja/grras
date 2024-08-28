@@ -54,6 +54,10 @@ module.exports = {
     alias: {
       components: relative('src/components'),
       hoc: relative('src/hoc'),
+      pages: relative('src/pages'),
+      assets: relative('src/assets'),
+      interfaces: relative('src/interfaces'),    
+      hooks: relative('src/hooks')      
     },
     modules: ['node_modules']
   }
