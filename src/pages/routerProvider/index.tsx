@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import routes from './routes'
 import { IRoute } from 'interfaces/IRoute'
+import LayoutPage from 'pages/layout'
 
 const NotFound: React.FC = () => {
   return <div>Not found</div>
@@ -12,9 +13,11 @@ const RouterProvider = () => {
     const { otherRoutes } = routes
     return (
       <Routes>
-        {otherRoutes?.map((route: IRoute) => (
-          <Route path={route.path} Component={route.component} />
-        ))}
+        <Route element={<LayoutPage />}>
+          {otherRoutes?.map((route: IRoute) => (
+            <Route path={route.path} Component={route.component} />
+          ))}
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     )

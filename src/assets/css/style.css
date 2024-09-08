@@ -432,3 +432,65 @@
     padding-right: 0;
     border-right: none;
 }
+
+.logo_img{
+    height: 4rem;
+}
+
+.dropdown-item:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: #06BBCC !important;
+}
+/* Custom CSS for Submenus */
+/* Style for the sub-sub-menu */
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%; /* Aligns the sub-menu to the right of the parent */
+    top: 0 !important;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block !important;
+  }
+  
+  /* Optional: Adjust the arrow indicators */
+  .dropdown-item.dropdown-toggle::after {
+    content: " ▸"; /* Add arrow to indicate more options */
+    float: right;
+  }
+  
+  /* Ensure dropdown-menu displays on hover */
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    & .dropdown-submenu > .dropdown-menu {
+        display: none;
+    }
+  }
+  
+  .dropdown-menu{
+    min-width: 15rem !important;
+  }
+
+  .text-color-coral {
+    color: coral;
+  }
+  .text-color-green {
+    color: green;
+  }
+  .text-color-red {
+    color: red;
+  }
+
+  .fs-0-9 {
+    font-size: 0.9rem !important;
+  }
+  
+  

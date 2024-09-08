@@ -1,9 +1,12 @@
-import WithHeaderFooter from 'hoc/withHeaderFooter'
 import RouterProvider from 'pages/routerProvider'
 import React from 'react'
 
 const App = () => {
-  return <RouterProvider></RouterProvider>
+  return (
+    <>
+      <RouterProvider />
+    </>
+  )
 }
 
-export default WithHeaderFooter(App)
+export default App
