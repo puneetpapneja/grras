@@ -1,6 +1,5 @@
 import AboutUs from 'components/about-us'
 import Banner from 'components/banner'
-import Categories from 'components/categories'
 import PopularCourses from 'components/popular-courses'
 import Testimonial from 'components/testimonial'
 import importScript from 'hooks'
@@ -12,7 +11,7 @@ const HomePage: React.FC = () => {
     <>
       <Banner />
       <AboutUs />
-      <Categories />
+      {/* <Categories /> */}
       <PopularCourses />
       <Testimonial />
     </>

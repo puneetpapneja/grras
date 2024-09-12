@@ -38,8 +38,13 @@ const Header = () => {
         <div className="row align-items-center">
           {/* Red Hat Certified Center - Centered */}
           <div className="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <img
+              src="assets/img/redhat.png"
+              className="redhat-logo"
+              alt="Logo"
+            />
             <span className="text-danger fw-bold">
-              Red Hat Certified Center
+              Red Hat Authorized Traning and Certification
             </span>
           </div>
 
@@ -95,7 +100,7 @@ const Header = () => {
 
           {/* Menu */}
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav ms-auto p-4 p-lg-0">
+            <div className="navbar-nav p-4 p-lg-0">
               <div className="nav-item dropdown">
                 <a
                   href="#"

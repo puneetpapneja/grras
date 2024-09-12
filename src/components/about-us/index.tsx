@@ -12,11 +12,11 @@ const AboutUs: React.FC = () => {
             >
               <div className="service-item text-center pt-3">
                 <div className="p-4">
-                  <i className="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                  <h5 className="mb-3">Skilled Instructors</h5>
+                  <i className="bi bi-gear text-primary mb-4"></i>
+                  <h5 className="mb-3">Customized Training Solutions</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    Tailored training programs designed to meet specific
+                    organizational needs.
                   </p>
                 </div>
               </div>
@@ -27,11 +27,11 @@ const AboutUs: React.FC = () => {
             >
               <div className="service-item text-center pt-3">
                 <div className="p-4">
-                  <i className="fa fa-3x fa-globe text-primary mb-4"></i>
-                  <h5 className="mb-3">Online Classes</h5>
+                  <i className="bi bi-book text-primary mb-4"></i>
+                  <h5 className="mb-3">Comprehensive Curriculum</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    Wide-ranging topics covering essential skills in DevOps and
+                    cloud technologies.
                   </p>
                 </div>
               </div>
@@ -42,11 +42,11 @@ const AboutUs: React.FC = () => {
             >
               <div className="service-item text-center pt-3">
                 <div className="p-4">
-                  <i className="fa fa-3x fa-home text-primary mb-4"></i>
-                  <h5 className="mb-3">Home Projects</h5>
+                  <i className="bi bi-shield-fill text-primary mb-4"></i>
+                  <h5 className="mb-3">Authorized Red Hat Partner</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    Official Red Hat partner providing certified training and
+                    expertise.
                   </p>
                 </div>
               </div>
@@ -57,11 +57,11 @@ const AboutUs: React.FC = () => {
             >
               <div className="service-item text-center pt-3">
                 <div className="p-4">
-                  <i className="fa fa-3x fa-book-open text-primary mb-4"></i>
-                  <h5 className="mb-3">Book Library</h5>
+                  <i className="bi bi-trophy text-primary mb-4"></i>
+                  <h5 className="mb-3">Industry-Recognized Certifications</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    Prepare for certifications that enhance career opportunities
+                    and validate skills.
                   </p>
                 </div>
               </div>
@@ -86,57 +86,57 @@ const AboutUs: React.FC = () => {
               <h6 className="section-title bg-white text-start text-primary pe-3">
                 About Us
               </h6>
-              <h1 className="mb-4">Welcome to eLEARNING</h1>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                At <strong>Grras Pvt. Ltd.</strong>, we empower individuals
+                through industry-relevant training and certification programs.
+                As an authorized Red Hat training partner, we deliver official
+                courses led by certified instructors, preparing participants for
+                recognized certifications.
               </p>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
+                We offer degree programs such as Bachelor of Computer
+                Applications (BCA) and Master of Computer Applications (MCA),
+                along with internship training programs, including summer and
+                winter internships, that bridge theory and practical experience.
               </p>
               <div className="row gy-2 gx-4 mb-4">
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>
-                    Skilled Instructors
+                    Industry-Relevant Training
                   </p>
                 </div>
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>
-                    Online Classes
+                    Authorized Red Hat Partner
                   </p>
                 </div>
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>
-                    International Certificate
+                    Degree Programs
                   </p>
                 </div>
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>
-                    Skilled Instructors
+                    Internship Training
                   </p>
                 </div>
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>
-                    Online Classes
+                    Hands-On Experience
                   </p>
                 </div>
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>
-                    International Certificate
+                    Certification Preparation
                   </p>
                 </div>
               </div>
-              <a className="btn btn-primary py-3 px-5 mt-2" href="">
-                Read More
-              </a>
             </div>
           </div>
         </div>
