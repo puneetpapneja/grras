@@ -492,5 +492,81 @@
   .fs-0-9 {
     font-size: 0.9rem !important;
   }
+  /* Custom styles for responsiveness */
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.navbar {
+  width: 100%;
+  padding: 0; /* Reset padding */
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Better vertical alignment */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-details {
+  width: 100%;
+  text-align: right;
+}
+
+.redhat-banner {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .text-md-start,
+  .text-md-end {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .text-md-start {
+      text-align: center !important;
+    }
+    .text-md-end {
+      text-align: center !important;
+    }
+  }
+
+  .navbar {
+    width: 100%;
+    max-width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .contact-details {
+    width: 100%;
+    text-align: right;
+  }
+  
+  .redhat-banner {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
   
   

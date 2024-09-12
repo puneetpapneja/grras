@@ -4,210 +4,100 @@ export const COURSES = [
     route: '',
     subCourse: [
       {
-        name: 'RHCSA',
+        name: 'RHCSA (Red Hat Certified System Administrator)',
         route: '',
       },
       {
-        name: 'RHCE (Ansible)',
+        name: 'RHCE (Red Hat Certified Engineer)',
         route: '',
       },
       {
-        name: 'Open Stack Cloud Administration',
+        name: 'DO188 (Red Hat OpenShift Development I)',
         route: '',
       },
       {
-        name: 'Red Hat Enterprise Virtualization',
+        name: 'DO280 (Red Hat OpenShift Administration I)',
         route: '',
       },
       {
-        name: 'Service Management Through Ansible (RH358)',
+        name: 'DO380 (Red Hat OpenShift Administration II)',
         route: '',
       },
       {
-        name: 'Red Hat Enterprise Linux Diagnostics and Troubleshooting (RH342)',
+        name: 'RH415 (Red Hat Security: Linux in Physical, Virtual, and Cloud)',
         route: '',
       },
       {
-        name: 'Red Hat Security: Linux in Physical, Virtual, and Cloud (RH415)',
+        name: 'RH358 (Red Hat Services Management and Automation)',
         route: '',
       },
       {
-        name: 'RHCA- Red Hat Certified Architect',
+        name: 'Red Hat Virtualization with OpenShift',
+        route: '',
+      },
+      {
+        name: 'OpenShift AI',
         route: '',
       },
     ],
   },
   {
-    name: 'Big Data Hadoop',
+    name: 'Kubernetes',
     route: '',
     subCourse: [
       {
-        name: 'Big Data Hadoop - Administration',
-        route: '',
-      },
-      {
-        name: 'Big Data Hadoop - Development',
+        name: 'Certified Kubernetes Administrator (CKA)',
         route: '',
       },
     ],
   },
   {
-    name: 'AWS Cloud Expert',
+    name: 'Docker',
     route: '',
     subCourse: [
       {
-        name: 'AWS Cloud Expert - AWS CSA ',
+        name: 'Docker Container Training',
         route: '',
       },
     ],
   },
   {
-    name: 'Python',
+    name: 'AWS',
     route: '',
     subCourse: [
       {
-        name: 'Python',
-        route: '',
-      },
-      {
-        name: 'Python with Web Development',
+        name: 'AWS Solutions Architect – Associate',
         route: '',
       },
     ],
   },
   {
-    name: 'CISCO',
+    name: 'DevOps',
     route: '',
-    subCourse: [
-      {
-        name: 'Networking: CISCO CCNA',
-        route: '',
-      },
-      {
-        name: 'CCNA',
-        route: '',
-      },
-    ],
+    subCourse: [],
   },
+]
+
+export const DEGREE_PROGRAMS = [
   {
-    name: 'DEVOPS',
-    route: '',
-    subCourse: [
-      {
-        name: 'DevOps',
-        route: '',
-      },
-      {
-        name: 'DevOps with Microsoft Azure',
-        route: '',
-      },
-    ],
-  },
-  {
-    name: 'Software Development',
-    route: '',
-    subCourse: [
-      {
-        name: 'Java Traning',
-        route: '',
-      },
-      {
-        name: 'Android Development',
-        route: '',
-      },
-      {
-        name: 'Full Stack Development (MEAN)',
-        route: '',
-      },
-      {
-        name: 'Full Stack Development (MERN)',
-        route: '',
-      },
-      {
-        name: 'AngularJs',
-        route: '',
-      },
-      {
-        name: 'Reactjs',
-        route: '',
-      },
-      {
-        name: 'Nodejs',
-        route: '',
-      },
-      {
-        name: 'Web Development (PHP)',
-        route: '',
-      },
-    ],
-  },
-  {
-    name: 'Docker & Kubernetes',
-    route: '',
-    subCourse: [
-      {
-        name: 'DCA (Docker Certified Associate)',
-        route: '',
-      },
-      {
-        name: 'CKA (Certified Kubernetes Administrator)',
-        route: '',
-      },
-    ],
-  },
-  {
-    name: 'Data Analytics Traning',
+    name: 'BCA Degree Program',
     route: '',
     subCourse: [],
   },
   {
-    name: 'Data Science',
+    name: 'MCA Degree Program',
+    route: '',
+    subCourse: [],
+  },
+]
+export const INTERNSHIP_PROGRAMS = [
+  {
+    name: 'Summer Internship',
     route: '',
     subCourse: [],
   },
   {
-    name: 'Digital Marketing ',
-    route: '',
-    subCourse: [
-      {
-        name: 'Digital Maketing Course',
-        route: '',
-      },
-      {
-        name: 'SEO',
-        route: '',
-      },
-      {
-        name: 'SMO',
-        route: '',
-      },
-      {
-        name: 'Advance Content Writting Course',
-        route: '',
-      },
-    ],
-  },
-  {
-    name: 'Ethical Hacking Traning',
-    route: '',
-    subCourse: [
-      {
-        name: 'Ethical Hacking & Cyber Security',
-        route: '',
-      },
-      {
-        name: 'Advance Ethical Hacking & Penetration Testing',
-        route: '',
-      },
-    ],
-  },
-  {
-    name: 'Salesforce Admin + Development',
-    route: '',
-    subCourse: [],
-  },
-  {
-    name: 'UI/UX Design',
+    name: 'Winter Internship',
     route: '',
     subCourse: [],
   },

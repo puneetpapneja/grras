@@ -1,10 +1,11 @@
+import { IPrograms } from 'interfaces/IProgram'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { COURSES } from 'utils/constants'
+import { COURSES, DEGREE_PROGRAMS, INTERNSHIP_PROGRAMS } from 'utils/constants'
 
 const Header = () => {
-  const renderMenus = () => {
-    return COURSES?.map((course) => {
+  const renderMenus = (courses: Array<IPrograms>) => {
+    return courses?.map((course) => {
       if (course?.subCourse?.length > 0) {
         const subMenus = course?.subCourse?.map((subcourse) => {
           return (
@@ -31,101 +32,113 @@ const Header = () => {
     })
   }
   return (
-    <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-      <a
-        href="index.html"
-        className="navbar-brand d-flex align-items-center px-4 px-lg-5"
-      >
-        <h2 className="m-0 text-primary">
-          <img src="assets/img/logo.jpg" className="logo_img" />
-        </h2>
-      </a>
-      <button
-        type="button"
-        className="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <div className="navbar-nav ms-auto p-4 p-lg-0">
-          <div className="nav-item dropdown">
-            <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              Traning
-            </a>
-            <div className="dropdown-menu fade-down m-0">{renderMenus()}</div>
+    <>
+      {/* Top bar with Red Hat Certified Center and contact details */}
+      <div className="container-fluid bg-light py-2 px-4">
+        <div className="row align-items-center">
+          {/* Red Hat Certified Center - Centered */}
+          <div className="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <span className="text-danger fw-bold">
+              Red Hat Certified Center
+            </span>
           </div>
-          <div className="nav-item dropdown">
+
+          {/* Contact Details - Right */}
+          <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
             <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
+              href="tel:+91-9529595240"
+              className="text-color-red me-3"
+              target="_blank"
             >
-              Certifications
+              <i className="fa fa-phone-alt"></i> 9529595240
             </a>
-            <div className="dropdown-menu fade-down m-0">
-              {/* {renderMenus()} */}
-            </div>
-          </div>
-          <div className="nav-item dropdown">
             <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
+              href="https://wa.link/0qhq91"
+              className="text-color-green me-3"
+              target="_blank"
             >
-              Degree Programs
+              <i className="fab fa-whatsapp"></i> 9785016284
             </a>
-            <div className="dropdown-menu fade-down m-0">
-              {/* {renderMenus()} */}
-            </div>
-          </div>
-          <div className="nav-item dropdown">
             <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
+              href="mailto:info@grras.com"
+              className="text-color-coral"
+              target="_blank"
             >
-              Exams
+              <i className="fa fa-envelope-open"></i> info@grras.com
             </a>
-            <div className="dropdown-menu fade-down m-0">
-              {/* {renderMenus()} */}
-            </div>
           </div>
-          <Link to="/" className="nav-item nav-link">
-            Internship
-          </Link>
         </div>
-        <a
-          href="tel:+91-9529595240"
-          className="text-color-red fs-0-9"
-          target="_blank"
-        >
-          <i className="fa fa-phone-alt"></i> 9529595240
-        </a>
-        &nbsp;&nbsp;
-        <a
-          href="https://wa.link/0qhq91"
-          className="text-color-green fs-0-9"
-          target="_blank"
-        >
-          <i className="fab fa-whatsapp"></i> 9785016284
-        </a>
-        &nbsp;&nbsp;
-        <a
-          href="mailto:info@grras.com"
-          className="text-color-coral fs-0-9"
-          target="_blank"
-        >
-          <i className="fa fa-envelope-open"></i> info@grras.com
-        </a>
-        &nbsp;&nbsp;
       </div>
-    </nav>
+
+      {/* Navbar */}
+      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div className="container-fluid">
+          {/* Logo */}
+          <a
+            href="index.html"
+            className="navbar-brand d-flex align-items-center px-4 px-lg-5"
+          >
+            <h2 className="m-0 text-primary">
+              <img src="assets/img/logo.jpg" className="logo_img" alt="Logo" />
+            </h2>
+          </a>
+
+          {/* Toggler button for mobile */}
+          <button
+            type="button"
+            className="navbar-toggler me-4"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          {/* Menu */}
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className="navbar-nav ms-auto p-4 p-lg-0">
+              <div className="nav-item dropdown">
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Training & Certifications
+                </a>
+                <div className="dropdown-menu fade-down m-0">
+                  {renderMenus(COURSES)}
+                </div>
+              </div>
+
+              <div className="nav-item dropdown">
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Degree Programs
+                </a>
+                <div className="dropdown-menu fade-down m-0">
+                  {renderMenus(DEGREE_PROGRAMS)}
+                </div>
+              </div>
+
+              <div className="nav-item dropdown">
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Internship
+                </a>
+                <div className="dropdown-menu fade-down m-0">
+                  {renderMenus(INTERNSHIP_PROGRAMS)}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   )
 }
 
