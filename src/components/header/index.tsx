@@ -1,7 +1,13 @@
 import { IPrograms } from 'interfaces/IProgram'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { COURSES, DEGREE_PROGRAMS, INTERNSHIP_PROGRAMS } from 'utils/constants'
+import {
+  COURSES,
+  DEGREE_PROGRAMS,
+  INTERNSHIP_PROGRAMS,
+  PHONE_NO,
+  WHATS_APP_LINK,
+} from 'utils/constants'
 
 const Header = () => {
   const renderMenus = (courses: Array<IPrograms>) => {
@@ -44,25 +50,25 @@ const Header = () => {
               alt="Logo"
             />
             <span className="text-danger fw-bold">
-              Red Hat Authorized Traning and Certification
+              Red Hat Authorized Training and Certification Partner since 2008
             </span>
           </div>
 
           {/* Contact Details - Right */}
           <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
             <a
-              href="tel:+91-9529595240"
+              href={`tel:+91-${PHONE_NO}`}
               className="text-color-red me-3"
               target="_blank"
             >
-              <i className="fa fa-phone-alt"></i> 9529595240
+              <i className="fa fa-phone-alt"></i> {PHONE_NO}
             </a>
             <a
-              href="https://wa.link/0qhq91"
+              href={WHATS_APP_LINK}
               className="text-color-green me-3"
               target="_blank"
             >
-              <i className="fab fa-whatsapp"></i> 9785016284
+              <i className="fab fa-whatsapp"></i> {PHONE_NO}
             </a>
             <a
               href="mailto:info@grras.com"

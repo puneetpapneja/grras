@@ -102,3 +102,6 @@ export const INTERNSHIP_PROGRAMS = [
     subCourse: [],
   },
 ]
+
+export const PHONE_NO = '9001991227'
+export const WHATS_APP_LINK = 'https://wa.link/2b0tl9'
