@@ -152,6 +152,11 @@
 
 
 /*** Header carousel ***/
+.header-carousel .owl-carousel .owl-item img {
+    opacity: 1 !important;   /* Ensure opacity is set to 1 (fully visible) */
+    filter: none !important; /* Remove any other effects, like grayscale or blur */
+    transition: none !important; /* Remove any transition effects */
+  }
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
@@ -362,6 +367,88 @@
 }
 
 .testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/*** popular Courses ***/
+.popular-courses::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+    z-index: 1;
+}
+
+.popular-courses  .owl-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .popular-courses .owl-item:not(.center) {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+ 
+
+.popular-courses::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .popular-courses::before,
+    .popular-courses::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .popular-courses::before,
+    .popular-courses::after {
+        width: 300px;
+    }
+}
+
+.popular-courses .owl-item .testimonial-text,
+.popular-courses .owl-item.center .testimonial-text * {
+    transition: .5s;
+}
+
+.popular-courses .owl-item.center .testimonial-text {
+    background: var(--primary) !important;
+}
+
+.popular-courses .owl-item.center .testimonial-text * {
+    color: #FFFFFF !important;
+}
+
+.popular-courses .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.popular-courses .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    transition: .5s;
+}
+
+.popular-courses .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
 }

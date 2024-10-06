@@ -27,11 +27,11 @@ const AboutUs: React.FC = () => {
             >
               <div className="service-item text-center pt-3">
                 <div className="p-4">
-                  <i className="bi bi-book text-primary mb-4"></i>
-                  <h5 className="mb-3">Comprehensive Curriculum</h5>
+                  <i className="bi bi-alarm text-primary mb-4"></i>
+                  <h5 className="mb-3">Internship Training</h5>
                   <p>
-                    Wide-ranging topics covering essential skills in DevOps and
-                    cloud technologies.
+                    Certified internship training offering practical experience,
+                    industry knowledge, and skill development.
                   </p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const AboutUs: React.FC = () => {
               <div className="position-relative h-100">
                 <img
                   className="img-fluid position-absolute w-100 h-100"
-                  src="assets/img/about.jpg"
+                  src="assets/img/about.svg"
                   style={{ objectFit: 'cover' }}
                   alt=""
                 />

@@ -104,6 +104,34 @@
             }
         }
     });
+
+    // Testimonials carousel
+    $(".popular-courses").owlCarousel({
+        items: 2,
+        autoplay: true,
+        smartSpeed: 1000,
+        center: true,
+        margin: 24,
+        dots: true,
+        loop: true,
+        nav : false,
+        responsive: {
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+
+    $('.owl-carousel').on('click', '.owl-item', function() {
+        var itemIndex = $(this).index();
+        $('.owl-carousel').trigger('to.owl.carousel', [itemIndex, 300]);
+      });
     
 })(jQuery);
 
