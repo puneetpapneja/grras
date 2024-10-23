@@ -1,24 +1,24 @@
-import axios from 'axios'
-import React, { FC, useEffect } from 'react'
+// import axios from 'axios'
+import React, { FC } from 'react'
 
 const Testimonial: FC = () => {
-  const apiKey = 'AIzaSyDrvuKnbttEFflybF48m6iE3HmIA-UGwdY'
-  const placeId = 'ChIJVVVV5dC1bTkRunbbnNdxVsQ'
+  // const apiKey = 'AIzaSyDrvuKnbttEFflybF48m6iE3HmIA-UGwdY'
+  // const placeId = 'ChIJVVVV5dC1bTkRunbbnNdxVsQ'
 
-  useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        const response = await axios.get(
-          `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&key=${apiKey}`
-        )
-        console.log(response)
-        //setReviews(response.data.result.reviews || []);
-      } catch (error) {
-        // setError('Error fetching reviews');
-      }
-    }
-    fetchReviews()
-  }, [apiKey, placeId])
+  // useEffect(() => {
+  //   const fetchReviews = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&key=${apiKey}`
+  //       )
+  //       console.log(response)
+  //       //setReviews(response.data.result.reviews || []);
+  //     } catch (error) {
+  //       // setError('Error fetching reviews');
+  //     }
+  //   }
+  //   fetchReviews()
+  // }, [apiKey, placeId])
 
   return (
     <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
