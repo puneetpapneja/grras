@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+        className="container-fluid bg-theme text-light footer pt-5 mt-5 wow fadeIn"
         data-wow-delay="0.1s"
       >
         <div className="container py-5">
@@ -126,7 +126,7 @@ const Footer = () => {
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 &copy;{' '}
                 <a className="border-bottom" href="#">
-                  Your Site Name
+                  Grras.com
                 </a>
                 , All Right Reserved.
               </div>

@@ -349,6 +349,10 @@
     color: #FFFFFF !important;
 }
 
+.bg-theme {
+    background: var(--primary) !important; 
+}
+
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
     display: flex;
@@ -658,4 +662,86 @@ body {
   .redhat-logo{
     height: 2rem;
   }
+
+  .btn-email {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+  }
+  
+  .btn-email:hover {
+    background-color: #218838;
+  }
+  
+  .btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #128c7e;
+  }
+  
+  .btn-content {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .btn-content:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .banner {
+    /* background: url('https://via.placeholder.com/1200x400') no-repeat center center; */
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.course-details {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    margin-top: -50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.btn-brochure, .btn-content {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-brochure:hover, .btn-content:hover {
+    background-color: var(--primary);
+}
+.curriculum, .pricing, .certification {
+    padding: 1.5rem 0;
+}
+.text-color {
+    color: var(--primary);
+}
   

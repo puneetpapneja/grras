@@ -56,26 +56,17 @@ const Header = () => {
 
           {/* Contact Details - Right */}
           <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-            <a
-              href={`tel:+91-${PHONE_NO}`}
-              className="text-color-red me-3"
-              target="_blank"
-            >
-              <i className="fa fa-phone-alt"></i> {PHONE_NO}
+            <a className="btn btn-outline-info btn-social" href="">
+              <i className="fab fa-twitter"></i>
             </a>
-            <a
-              href={WHATS_APP_LINK}
-              className="text-color-green me-3"
-              target="_blank"
-            >
-              <i className="fab fa-whatsapp"></i> {PHONE_NO}
+            <a className="btn btn-outline-info btn-social" href="">
+              <i className="fab fa-facebook-f"></i>
             </a>
-            <a
-              href="mailto:info@grras.com"
-              className="text-color-coral"
-              target="_blank"
-            >
-              <i className="fa fa-envelope-open"></i> info@grras.com
+            <a className="btn btn-outline-info btn-social" href="">
+              <i className="fab fa-youtube"></i>
+            </a>
+            <a className="btn btn-outline-info btn-social" href="">
+              <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>
@@ -144,6 +135,32 @@ const Header = () => {
                 <div className="dropdown-menu fade-down m-0">
                   {renderMenus(INTERNSHIP_PROGRAMS)}
                 </div>
+              </div>
+              <div
+                className="col-12 col-md-5 d-flex justify-content-center justify-content-md-end"
+                style={{ alignItems: 'center' }}
+              >
+                <a
+                  href={`tel:+91-${PHONE_NO}`}
+                  className="text-color-red me-3"
+                  target="_blank"
+                >
+                  <i className="fa fa-phone-alt"></i> {PHONE_NO}
+                </a>
+                <a
+                  href={WHATS_APP_LINK}
+                  className="text-color-green me-3"
+                  target="_blank"
+                >
+                  <i className="fab fa-whatsapp"></i> {PHONE_NO}
+                </a>
+                <a
+                  href="mailto:info@grras.com"
+                  className="text-color-coral"
+                  target="_blank"
+                >
+                  <i className="fa fa-envelope-open"></i> info@grras.com
+                </a>
               </div>
             </div>
           </div>

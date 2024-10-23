@@ -57,6 +57,7 @@ module.exports = {
       assets: relative('src/assets'),
       interfaces: relative('src/interfaces'),    
       hooks: relative('src/hooks'),      
+      service: relative('src/service'),      
       utils: relative('src/utils')      
     },
     modules: ['node_modules']
