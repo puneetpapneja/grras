@@ -2,9 +2,6 @@
 import React, { FC } from 'react'
 
 const Testimonial: FC = () => {
-  // const apiKey = 'AIzaSyDrvuKnbttEFflybF48m6iE3HmIA-UGwdY'
-  // const placeId = 'ChIJVVVV5dC1bTkRunbbnNdxVsQ'
-
   // useEffect(() => {
   //   const fetchReviews = async () => {
   //     try {
