@@ -1,6 +1,23 @@
+import { IPrograms } from 'interfaces/IProgram'
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { COURSES, PHONE_NO } from 'utils/constants'
 
 const Footer = () => {
+  const renderMenus = (courses: Array<IPrograms>) => {
+    return courses?.map((course) => {
+      if (course?.subCourse?.length > 0) {
+        return course?.subCourse.slice(0, 2)?.map((subcourse) => {
+          return (
+            <Link to={subcourse?.route} className="btn btn-link">
+              {subcourse?.shortName}
+            </Link>
+          )
+        })
+      }
+      return null
+    })
+  }
   return (
     <>
       <div
@@ -11,33 +28,31 @@ const Footer = () => {
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">
               <h4 className="text-white mb-3">Quick Link</h4>
-              <a className="btn btn-link" href="">
-                About Us
-              </a>
-              <a className="btn btn-link" href="">
-                Contact Us
-              </a>
-              <a className="btn btn-link" href="">
-                Privacy Policy
-              </a>
-              <a className="btn btn-link" href="">
-                Terms & Condition
-              </a>
-              <a className="btn btn-link" href="">
-                FAQs & Help
-              </a>
+              {renderMenus(COURSES)}
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text-white mb-3">Contact</h4>
               <p className="mb-2">
-                <i className="fa fa-map-marker-alt me-3"></i>123 Street, New
-                York, USA
+                <i className="fa fa-map-marker-alt me-3"></i>A-81, Singh Bhoomi
+                Khatipura Rd, behind Marudhar Hospital, Jaipur, Rajasthan 302012
               </p>
               <p className="mb-2">
-                <i className="fa fa-phone-alt me-3"></i>+012 345 67890
+                <a
+                  href={`tel:+91-${PHONE_NO}`}
+                  className="text-color-white me-3"
+                  target="_blank"
+                >
+                  <i className="fa fa-phone-alt"></i> {PHONE_NO}
+                </a>
               </p>
               <p className="mb-2">
-                <i className="fa fa-envelope me-3"></i>info@example.com
+                <a
+                  href="mailto:info@grras.com"
+                  className="text-color-white"
+                  target="_blank"
+                >
+                  <i className="fa fa-envelope-open"></i> info@grras.com
+                </a>
               </p>
               <div className="d-flex pt-2">
                 <a className="btn btn-outline-light btn-social" href="">

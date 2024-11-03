@@ -580,6 +580,10 @@
     color: red;
   }
 
+  .text-color-white {
+    color: white;
+  }
+
   .fs-0-9 {
     font-size: 0.9rem !important;
   }
@@ -744,4 +748,63 @@ body {
 .text-color {
     color: var(--primary);
 }
+
+
+/* Set a fixed height for the carousel container */
+.owl-carousel .owl-stage-outer {
+    height: 400px; /* Adjust to desired height */
+    overflow: hidden;
+  }
+  
+  
+  /* Ensure the image fits within the height while maintaining its aspect ratio */
+
+  .hero-section {
+    background-image: url('/assets/img/12-1.svg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    padding: 60px 0;
+  }
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  .icon {
+    font-size: 1.5rem;
+    color: #0066cc;
+  }
+  .accordion-button::after {
+    transform: rotate(-90deg);
+    transition: transform 0.2s;
+  }
+  .accordion-button.collapsed::after {
+    transform: rotate(0deg);
+  }
+  .section-title {
+    font-size: 1.75rem;
+    color: #333;
+  }
+  .highlight {
+    color: #0066cc;
+    font-weight: bold;
+  }
+  .list-group-item i {
+    color: #0066cc;
+    margin-right: 8px;
+  }
+  .contact-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+  }
   

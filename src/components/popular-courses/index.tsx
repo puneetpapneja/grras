@@ -13,7 +13,7 @@ const PopularCourses: React.FC = () => {
         </div>
         <div className="owl-carousel popular-courses position-relative">
           <Course
-            img="assets/img/1.svg"
+            img="assets/img/1.png"
             heading="Web Design & Development Course for Beginners"
             noOfStudents={30}
             timing="15 Hours"
@@ -21,7 +21,7 @@ const PopularCourses: React.FC = () => {
             key={3}
           />
           <Course
-            img="assets/img/9.svg"
+            img="assets/img/9.png"
             heading="Web Design & Development Course for Beginners"
             noOfStudents={30}
             timing="15 Hours"
@@ -29,7 +29,7 @@ const PopularCourses: React.FC = () => {
             key={3}
           />
           <Course
-            img="assets/img/15.svg"
+            img="assets/img/15.png"
             heading="Web Design & Development Course for Beginners"
             noOfStudents={30}
             timing="15 Hours"
@@ -37,7 +37,7 @@ const PopularCourses: React.FC = () => {
             key={3}
           />
           <Course
-            img="assets/img/12.svg"
+            img="assets/img/12.png"
             heading="Web Design & Development Course for Beginners"
             noOfStudents={30}
             timing="15 Hours"
@@ -45,7 +45,7 @@ const PopularCourses: React.FC = () => {
             key={3}
           />
           <Course
-            img="assets/img/13.svg"
+            img="assets/img/13.png"
             heading="Web Design & Development Course for Beginners"
             noOfStudents={30}
             timing="15 Hours"
@@ -53,7 +53,7 @@ const PopularCourses: React.FC = () => {
             key={3}
           />
           <Course
-            img="assets/img/14.svg"
+            img="assets/img/14.png"
             heading="Web Design & Development Course for Beginners"
             noOfStudents={30}
             timing="15 Hours"

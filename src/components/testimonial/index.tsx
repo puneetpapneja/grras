@@ -1,21 +1,32 @@
-// import axios from 'axios'
-import React, { FC } from 'react'
+import axios from 'axios'
+import React, { FC, useEffect } from 'react'
 
 const Testimonial: FC = () => {
-  // useEffect(() => {
-  //   const fetchReviews = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&key=${apiKey}`
-  //       )
-  //       console.log(response)
-  //       //setReviews(response.data.result.reviews || []);
-  //     } catch (error) {
-  //       // setError('Error fetching reviews');
-  //     }
-  //   }
-  //   fetchReviews()
-  // }, [apiKey, placeId])
+  const apiKey = 'AIzaSyCp8SBgVY5Rs0se7SN2QRWw6BD8SV7DBW0'
+  const placeId = 'ChIJVVVV5dC1bTkRunbbnNdxVsQ'
+  useEffect(() => {
+    const fetchReviews = async () => {
+      const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&key=${apiKey}`
+
+      try {
+        const response = await axios.get(url, {
+          headers: { 'Access-Control-Allow-Origin': '*' },
+        })
+        const reviews = response.data.result.reviews
+        console.log(reviews)
+        // return reviews.map(review => ({
+        //   author: review.author_name,
+        //   rating: review.rating,
+        //   text: review.text,
+        //   time: review.relative_time_description,
+        // }));
+      } catch (error) {
+        console.error('Error fetching Google reviews:', error)
+        return []
+      }
+    }
+    fetchReviews()
+  }, [apiKey, placeId])
 
   return (
     <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">

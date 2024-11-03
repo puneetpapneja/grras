@@ -137,7 +137,7 @@ const Header = () => {
                 </div>
               </div>
               <div
-                className="col-12 col-md-5 d-flex justify-content-center justify-content-md-end"
+                className="col-lg-5 col-md-12 d-flex justify-content-center justify-content-md-end"
                 style={{ alignItems: 'center' }}
               >
                 <a
