@@ -1,3 +1,4 @@
+
 /********** Template CSS **********/
 :root {
     --primary: #06BBCC;
@@ -806,5 +807,109 @@ body {
   .contact-card {
     background-color: #f8f9fa;
     padding: 30px;
+  }
+  
+
+  .bca-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .bca-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .bca-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .bca-header h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .bca-banner {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .bca-introduction, .bca-why-choose, .bca-highlights,
+  .bca-structure, .bca-specialization, .bca-job-guarantee,
+  .bca-careers, .bca-eligibility, .bca-admission, .bca-fees,
+  .bca-contact {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .bca-why-choose {
+    background-color: #eef;
+  }
+  
+  .bca-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .bca-card {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .bca-highlights-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bca-structure-year {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bca-structure-year div {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .bca-specialization-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bca-specialization-content div {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .bca-careers-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bca-partners img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+  }
+  
+  .bca-contact-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
   }
   

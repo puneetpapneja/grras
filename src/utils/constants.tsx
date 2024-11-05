@@ -21,7 +21,7 @@ export const SLUGS = {
 export const COURSE_DETAILS = {
   [SLUGS.AWS_Solutions_Architect_Associate]: {
     name: 'AWS Solutions Architect',
-    banner: 'assets/img/11.png',
+    banner: 'assets/img/11.jpg',
     about:
       'The <strong>AWS Solutions Architect</strong> course is designed to equip IT professionals with the skills and knowledge necessary to design, deploy, and manage applications and infrastructure on Amazon Web Services (AWS). This course covers essential AWS services, best practices for cloud architecture, and how to leverage AWS for building scalable, secure, and cost-efficient solutions. By the end of this course, participants will be ready to design and deploy robust applications in the AWS cloud and prepare for the <strong>AWS Certified Solutions Architect - Associate</strong> exam.',
     highlights: [
@@ -79,7 +79,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.BCA_DEGREE_PROGRAM]: {
     name: 'BCA Degree Program',
-    banner: 'assets/img/12.png',
+    banner: 'assets/img/12.jpg',
     about: '',
     highlights: [],
     prerequisites: [],
@@ -91,7 +91,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.CKA]: {
     name: 'Certified Kubernetes Administrator (CKA) course',
-    banner: 'assets/img/9.png',
+    banner: 'assets/img/9.jpg',
     about:
       'The <strong>Certified Kubernetes Administrator (CKA)</strong> course is designed to equip IT professionals with the skills necessary to install, configure, and manage Kubernetes clusters. This certification validates your knowledge and hands-on expertise in managing Kubernetes environments, making you proficient in core concepts like deployment, networking, security, and troubleshooting in a production-grade Kubernetes setup. The CKA is highly sought after for administrators working with containerized applications and cloud-native environments.',
     highlights: [
@@ -156,7 +156,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.DEVOPS]: {
     name: 'D0188 Exam',
-    banner: 'assets/img/1.png',
+    banner: 'assets/img/1.jpg',
     about:
       'The <strong>DevOps and Cloud Computing</strong> course is designed to equip IT professionals with the skills necessary to deploy, manage, and automate cloud infrastructure using modern DevOps tools and practices. This course covers the core principles of DevOps—collaboration, automation, and continuous delivery—while integrating hands-on experience with cloud platforms like AWS, Azure, or Google Cloud. Participants will learn to build scalable cloud environments, automate infrastructure with tools like Terraform and Ansible, and manage CI/CD pipelines for seamless software delivery.',
     highlights: [
@@ -226,7 +226,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.DO188]: {
     name: 'D0188',
-    banner: 'assets/img/3.png',
+    banner: 'assets/img/3.jpg',
     about:
       'The DO188 course focuses on developing and containerizing applications for deployment on Red Hat OpenShift. This course is designed to help developers build, deploy, and manage applications in containerized environments using OpenShift. By the end of this course, participants will gain the skills to containerize applications and deploy them on OpenShift, following modern DevOps practices.',
     highlights: [
@@ -285,7 +285,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.DO280]: {
     name: 'DO280 Exam',
-    banner: 'assets/img/4.png',
+    banner: 'assets/img/4.jpg',
     about:
       'The <strong>DO280 (Red Hat OpenShift Administration II)</strong> course focuses on configuring and managing a production-grade OpenShift cluster using **OpenShift Container Platform 4.14**. This course teaches advanced administrative skills required for maintaining the security, scalability, and performance of OpenShift clusters in production environments. Participants will gain hands-on experience in configuring key components of a Kubernetes-based OpenShift infrastructure',
     highlights: [
@@ -346,7 +346,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.DO380]: {
     name: 'DO380 Exam',
-    banner: 'assets/img/5.png',
+    banner: 'assets/img/5.jpg',
     about:
       'The <strong>DO380 (Red Hat OpenShift Administration III)</strong> course is designed for administrators who need to scale and manage OpenShift clusters for enterprise workloads. This course covers advanced OpenShift cluster management, including scaling applications, automating tasks, implementing high availability (HA), and managing multi-cluster environments. It prepares participants to maintain highly available, scalable, and reliable OpenShift deployments in large-scale enterprise environments.',
     highlights: [
@@ -403,7 +403,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.DOCKER_CONTAINER_TRANING]: {
     name: 'Docker Container and Podman',
-    banner: 'assets/img/10.png',
+    banner: 'assets/img/10.jpg',
     about:
       'The <strong>Docker Container and Podman</strong> course provides a comprehensive introduction to containerization technologies, focusing on Docker and Podman. These tools are widely used for building, managing, and deploying containerized applications in both development and production environments. Participants will learn to work with containers, create container images, and understand the differences and similarities between Docker and Podman, preparing them for modern DevOps and cloud-native practices.',
     highlights: [
@@ -463,7 +463,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.MCA_DEGREE_PROGRAM]: {
     name: 'MCA Degree Program',
-    banner: 'assets/img/13.png',
+    banner: 'assets/img/13.jpg',
     about: '',
     highlights: [],
     prerequisites: [],
@@ -475,7 +475,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.OPENSHIFT_AI]: {
     name: 'OpenShift AI',
-    banner: 'assets/img/1.png',
+    banner: 'assets/img/1.jpg',
     about:
       'The Red Hat Certified Specialist in OpenShift AI Exam (EX267) is designed to validate the skills of IT professionals in deploying and managing AI/ML workloads using Red Hat OpenShift. This certification focuses on applying artificial intelligence (AI) and machine learning (ML) in a containerized environment, helping participants demonstrate their ability to build, scale, and manage AI models in a Kubernetes-based infrastructure. The course emphasizes using OpenShift’s powerful capabilities to accelerate the development and deployment of AI workloads.',
     highlights: [
@@ -540,7 +540,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.REDHAT_OPENSHIFT]: {
     name: 'DO316 (Red Hat Virtualization with OpenShift)',
-    banner: 'assets/img/8.png',
+    banner: 'assets/img/8.jpg',
     about:
       'The <strong>DO316 (Managing Virtual Machines with Red Hat OpenShift Virtualization)</strong> course is designed to equip system administrators and IT professionals with the skills to manage virtual machines (VMs) alongside containerized workloads on Red Hat OpenShift. This course focuses on integrating virtualization into Kubernetes environments, enabling seamless management of both VMs and containers in a hybrid infrastructure. Participants will learn how to deploy, configure, and manage VMs using OpenShift Virtualization.',
     highlights: [
@@ -602,7 +602,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.RH358]: {
     name: 'RH358 Exam',
-    banner: 'assets/img/7.png',
+    banner: 'assets/img/7.jpg',
     about:
       'The <strong>RH358 (Red Hat Services Management and Automation)</strong> course is designed to provide system administrators and DevOps professionals with the skills needed to manage and automate Red Hat Enterprise Linux services at scale. The course covers essential topics such as service management, automation with Ansible, and securing services in a Linux environment. By the end of this course, participants will be able to manage and automate key services on Red Hat systems efficiently.',
     highlights: [
@@ -660,7 +660,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.RH415]: {
     name: 'RH415 Exam',
-    banner: 'assets/img/6.png',
+    banner: 'assets/img/6.jpg',
     about:
       'The <strong>RH415 (Red Hat Security: Linux in Physical, Virtual, and Cloud)</strong> course is designed for senior Linux administrators responsible for securing systems and managing compliance in physical, virtual, and cloud environments. This course focuses on advanced security techniques for Red Hat Enterprise Linux, enabling participants to address security vulnerabilities, implement access controls, and maintain system integrity across diverse infrastructure.',
     highlights: [
@@ -720,7 +720,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.RHCE]: {
     name: 'RHCE Course',
-    banner: 'assets/img/2.png',
+    banner: 'assets/img/2.jpg',
     about:
       'The RHCE course is designed for experienced Linux administrators who want to advance their skills and become proficient in automating Red Hat Enterprise Linux tasks using Ansible. This certification builds on RHCSA skills, focusing on automation, deployment, and management across multiple systems. The RHCE credential is highly regarded and helps professionals achieve higher-level administrative roles in the industry.',
     highlights: [
@@ -779,7 +779,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.RHCSA]: {
     name: 'RHCSA Traning',
-    banner: 'assets/img/1.png',
+    banner: 'assets/img/1.jpg',
     about:
       'The RHCSA course is designed to provide a comprehensive understanding of Red Hat Enterprise Linux administration. It covers essential system administration tasks like configuring file systems, managing users, and securing Linux environments. This course prepares students for real-world scenarios and aligns with current industry demands, making it ideal for anyone aiming to become a certified system administrator',
     highlights: [
@@ -838,7 +838,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.SUMMER_INTERNSHIP_TRANING]: {
     name: 'Summer Internship Traning',
-    banner: 'assets/img/14.png',
+    banner: 'assets/img/14.jpg',
     about: `Get ahead of the competition by utilizing your summer break to gain hands-on experience with our Summer Internship Program. Tailored for college students, this internship is designed to help you develop real-world skills in DevOps, cloud computing, Python, data science, and more. Whether you're a beginner or looking to enhance your knowledge, this program is perfect for all levels.`,
     highlights: [
       {
@@ -888,7 +888,7 @@ export const COURSE_DETAILS = {
   },
   [SLUGS.WINTER_INTERNSHIP_TRANING]: {
     name: 'Winter Internship Traning',
-    banner: 'assets/img/15.png',
+    banner: 'assets/img/15.jpg',
     about:
       'Make the most of your winter break by enrolling in our Winter Internship Program, specifically tailored for students looking to upskill during their holidays. This program offers a mix of theoretical learning and practical exposure in the latest technologies like DevOps, Python, and Red Hat certifications. Boost your career prospects with hands-on experience and industry-recognized certifications.',
     highlights: [

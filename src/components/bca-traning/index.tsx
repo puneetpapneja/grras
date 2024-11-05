@@ -2,180 +2,238 @@ import React from 'react'
 
 const BCAProgram: React.FC = () => {
   return (
-    <>
-      <section className="hero-section d-flex align-items-center text-center">
-        <div className="container hero-content">
-          <h1 className="display-4 font-weight-bold"></h1>
-          <p className="lead"></p>
-        </div>
-      </section>
+    <div className="bca-container">
+      <div
+        className="banner text-center"
+        style={{ background: `url(/assets/img/12.jpg) no-repeat` }}
+      ></div>
 
-      <div className="container my-5">
-        <div className="card shadow-lg mb-4">
-          <div className="card-body">
-            <h3 className="text-center section-title">
-              Why Choose Our BCA Program?
-            </h3>
-            <p className="text-center">
-              Our BCA program, affiliated with renowned universities, prepares
-              you for a career in the fast-evolving tech world with a{' '}
-              <span className="highlight">100% job guarantee</span>.
+      <div className="container course-details rounded">
+        <div className="row">
+          <section className="bca-introduction">
+            <p>
+              Our <strong>Bachelor of Computer Applications (BCA)</strong>{' '}
+              program, affiliated with renowned universities like{' '}
+              <strong>Rajasthan University</strong> and{' '}
+              <strong>Manipal University</strong>, offers a cutting-edge
+              curriculum designed to prepare you for the fast-evolving world of
+              technology. We provide a <strong>100% job guarantee</strong> upon
+              graduation, ensuring that you are placed in top-tier companies.
             </p>
-            <div className="row text-center">
-              <div className="col-md-4">
-                <i className="icon fas fa-briefcase"></i>
-                <h5 className="mt-2">100% Job Guarantee</h5>
+          </section>
+
+          <section className="bca-why-choose">
+            <h2>Why Choose Our BCA Program?</h2>
+            <div className="bca-cards">
+              <div className="bca-card">
+                <h5>100% Job Guarantee</h5>
                 <p>
-                  Your career is our commitment, with placement in top
-                  companies.
+                  Our commitment ensures that every graduate secures employment
+                  in a reputed company.
                 </p>
               </div>
-              <div className="col-md-4">
-                <i className="icon fas fa-university"></i>
-                <h5 className="mt-2">Affiliated Universities</h5>
+              <div className="bca-card">
+                <h5>Affiliated with Leading Universities</h5>
                 <p>
-                  Globally recognized degrees from Rajasthan and Manipal
-                  Universities.
+                  Earn a globally recognized degree with high academic
+                  standards.
                 </p>
               </div>
-              <div className="col-md-4">
-                <i className="icon fas fa-laptop-code"></i>
-                <h5 className="mt-2">Industry-Focused Curriculum</h5>
+              <div className="bca-card">
+                <h5>Hands-On Learning</h5>
                 <p>
-                  Hands-on skills in Software Development, Cybersecurity, and
-                  more.
+                  Work on real-world projects and internships to gain practical
+                  experience.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <div className="card shadow-lg mb-4">
-          <div className="card-body">
-            <h3 className="text-center section-title">Program Highlights</h3>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">
-                <i className="fas fa-check-circle"></i> 100% Job Guarantee after
-                program completion
+          <section className="bca-highlights">
+            <h2>Program Highlights</h2>
+            <ul className="bca-highlights-list">
+              <li>100% Job Guarantee after program completion</li>
+              <li>Semester-Based Learning for systematic knowledge building</li>
+              <li>Live Projects and Internships with top companies</li>
+              <li>
+                Practical Training in key areas like Software Development, Cloud
+                Computing, and Cybersecurity
               </li>
-              <li className="list-group-item">
-                <i className="fas fa-calendar-alt"></i> Semester-Based Learning
-              </li>
-              <li className="list-group-item">
-                <i className="fas fa-briefcase"></i> Live Projects and
-                Internships
-              </li>
-              <li className="list-group-item">
-                <i className="fas fa-laptop-code"></i> Practical Training in key
-                areas like Software Development
-              </li>
-              <li className="list-group-item">
-                <i className="fas fa-chalkboard-teacher"></i> Expert Faculty
+              <li>Expert Faculty from both industry and academia</li>
+              <li>
+                Affiliation with Reputable Universities like Rajasthan
+                University and Manipal University
               </li>
             </ul>
-          </div>
-        </div>
+          </section>
 
-        <div className="accordion mb-4" id="courseStructure">
-          <div className="card">
-            <div className="card-header">
-              <h5>
-                <button
-                  className="accordion-button"
-                  data-toggle="collapse"
-                  data-target="#collapseCourse"
-                >
-                  Course Structure (Semester-Based Learning)
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseCourse"
-              className="collapse show"
-              data-parent="#courseStructure"
-            >
-              <div className="card-body">
-                <h5 className="highlight">Year 1: Foundational Skills</h5>
+          <section className="bca-structure">
+            <h2>Course Structure (Semester-Based Learning)</h2>
+            <div className="bca-structure-year">
+              <div>
+                <h5>Year 1: Foundational Skills</h5>
+                <h6>Semester 1:</h6>
                 <ul>
-                  <li>
-                    <strong>Semester 1:</strong> Intro to Programming, Web
-                    Development, Communication Skills
-                  </li>
-                  <li>
-                    <strong>Semester 2:</strong> Data Structures, Advanced Web
-                    Development, Operating Systems
-                  </li>
+                  <li>Introduction to Programming (Python/C++)</li>
+                  <li>Fundamentals of Web Development (HTML, CSS)</li>
+                  <li>Computer Organization</li>
+                  <li>Communication Skills for IT</li>
+                  <li>Practical Lab: Basic Programming Projects</li>
                 </ul>
-                <h5 className="highlight">Year 2: Core Competency Building</h5>
+                <h6>Semester 2:</h6>
                 <ul>
-                  <li>
-                    <strong>Semester 3:</strong> OOP, Database Systems,
-                    Networking Fundamentals
-                  </li>
-                  <li>
-                    <strong>Semester 4:</strong> Cloud Computing, Mobile App
-                    Development, Linux Administration
-                  </li>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Advanced Web Development (JavaScript, Bootstrap)</li>
+                  <li>Mathematics for Computing</li>
+                  <li>Operating Systems</li>
+                  <li>Practical Lab: Web Development Projects</li>
                 </ul>
-                <h5 className="highlight">
-                  Year 3: Specialization and Career Preparation
-                </h5>
+              </div>
+              <div>
+                <h5>Year 2: Core Competency Building</h5>
+                <h6>Semester 3:</h6>
                 <ul>
-                  <li>
-                    <strong>Semester 5:</strong> Data Science, Cybersecurity,
-                    DevOps Tools
-                  </li>
-                  <li>
-                    <strong>Semester 6:</strong> Full Stack Web Dev, Project
-                    Management, Internship
-                  </li>
+                  <li>Object-Oriented Programming (Java)</li>
+                  <li>Database Management Systems (SQL, NoSQL)</li>
+                  <li>Networking Fundamentals</li>
+                  <li>Software Engineering</li>
+                  <li>Practical Lab: Database Projects and Networking Tasks</li>
+                </ul>
+                <h6>Semester 4:</h6>
+                <ul>
+                  <li>Cloud Computing Basics (AWS, Azure)</li>
+                  <li>Mobile App Development (Android/iOS)</li>
+                  <li>Linux Administration</li>
+                  <li>Data Communication and Networks</li>
+                  <li>Practical Lab: Cloud and Mobile Development Projects</li>
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <div className="card shadow-lg mb-4">
-          <div className="card-body">
-            <h3 className="text-center section-title">100% Job Guarantee</h3>
-            <p className="text-center">
-              Our commitment ensures job placement in top IT companies like TCS,
-              Wipro, and IBM.
+          <section className="bca-specialization">
+            <h5>Year 3: Specialization and Career Preparation</h5>
+            <div className="bca-specialization-content">
+              <div>
+                <h6>Semester 5:</h6>
+                <ul>
+                  <li>
+                    Data Science and Machine Learning (Python, TensorFlow)
+                  </li>
+                  <li>Cybersecurity and Ethical Hacking</li>
+                  <li>DevOps Tools (Docker, Kubernetes, Jenkins)</li>
+                  <li>Elective: Blockchain or Artificial Intelligence</li>
+                  <li>
+                    Practical Lab: Data Science and Cybersecurity Projects
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6>Semester 6:</h6>
+                <ul>
+                  <li>Full Stack Web Development (React, Django/Flask)</li>
+                  <li>Project Management and Agile Methodologies</li>
+                  <li>Capstone Project and Industry Internship</li>
+                  <li>Job Placement Preparation</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section className="bca-job-guarantee">
+            <h2>100% Job Guarantee</h2>
+            <p>
+              Our <strong>100% job guarantee</strong> means that every graduate
+              will secure a job placement in top IT companies. Our{' '}
+              <strong>placement cell</strong> collaborates with industry leaders
+              to ensure you’re placed in the right role, whether it's in{' '}
+              <strong>Software Development</strong>,{' '}
+              <strong>Cloud Engineering</strong>, <strong>Data Science</strong>,
+              or <strong>DevOps</strong>.
             </p>
-            <h5>Top Job Roles:</h5>
-            <ul>
+          </section>
+
+          <section className="bca-careers">
+            <h5>Top Job Roles You Can Pursue:</h5>
+            <ul className="bca-careers-list">
               <li>Software Developer</li>
               <li>Cloud Engineer</li>
               <li>Data Scientist</li>
               <li>DevOps Engineer</li>
               <li>Network Administrator</li>
+              <li>Cybersecurity Analyst</li>
             </ul>
-          </div>
-        </div>
 
-        <div className="contact-card text-center shadow-lg p-4 mb-4">
-          <h3>Admission Process</h3>
-          <p>
-            <strong>Eligibility:</strong> Students from any subject background
-            who have completed 12th grade can apply.
-          </p>
-          <p>
-            <strong>Entrance Test/Interview:</strong> Based on merit or entrance
-            performance.
-          </p>
-          <h3>Contact Us</h3>
-          <p>
-            <strong>Phone:</strong> [Insert contact number]
-          </p>
-          <p>
-            <strong>Email:</strong> [Insert contact email]
-          </p>
-          <p>
-            <strong>Location:</strong> [Insert address]
-          </p>
+            <h5>Our Hiring Partners:</h5>
+            <div className="bca-partners">
+              <img src="/assets/img/tcs.svg" alt="TCS" />
+              <img src="/assets/img/wipro.svg" alt="Wipro" />
+              <img src="/assets/img/accenture.svg" alt="Accenture" />
+              <img src="/assets/img/cognizants.svg" alt="Cognizant" />
+              <img src="/assets/img/ibm.svg" alt="IBM" />
+              <img src="/assets/img/infosys.svg" alt="Infosys" />
+              <img src="/assets/img/tech-mahindra.svg" alt="Tech Mahindra" />
+              <img src="/assets/img/capgemini.svg" alt="Capgemini" />
+            </div>
+          </section>
+
+          <section className="bca-eligibility">
+            <h2>Eligibility</h2>
+            <p>
+              Students from <strong>any subject background</strong> who have
+              completed their 12th grade are eligible to enroll. Whether you
+              have a background in commerce, science, or arts, this program will
+              set you up for success in IT.
+            </p>
+          </section>
+
+          <section className="bca-admission">
+            <h2>Admission Process</h2>
+            <ol>
+              <li>
+                <strong>Eligibility:</strong> Students from any subject
+                background with 12th-grade completion can apply.
+              </li>
+              <li>
+                <strong>Entrance Test/Direct Admission:</strong> Admission is
+                based on merit or performance in an entrance exam.
+              </li>
+              <li>
+                <strong>Interview:</strong> An interview to assess your
+                suitability for the program.
+              </li>
+              <li>
+                <strong>Enrollment:</strong> Complete the formalities and secure
+                your seat by paying the enrollment fee.
+              </li>
+            </ol>
+          </section>
+
+          <section className="bca-fees">
+            <h2>Fees and Scholarships</h2>
+            <p>
+              We offer flexible payment options and scholarships to meritorious
+              students or those in need. Contact us for more information on
+              scholarship opportunities.
+            </p>
+          </section>
+
+          <section className="bca-contact">
+            <h2>Contact Us</h2>
+            <p>
+              Ready to take the first step toward a successful career in IT?
+              Contact us today to learn more about the BCA program, the
+              admission process, and the exciting opportunities that await you.
+            </p>
+            <img
+              src="/images/contact-us.jpg" // Replace with actual image path
+              alt="Contact Us"
+              className="bca-contact-image"
+            />
+          </section>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
