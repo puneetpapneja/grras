@@ -2,8 +2,8 @@ import axios from 'axios'
 import React, { FC, useEffect } from 'react'
 
 const Testimonial: FC = () => {
-  const apiKey = 'AIzaSyCp8SBgVY5Rs0se7SN2QRWw6BD8SV7DBW0'
-  const placeId = 'ChIJVVVV5dC1bTkRunbbnNdxVsQ'
+  const apiKey = ''
+  const placeId = ''
   useEffect(() => {
     const fetchReviews = async () => {
       const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&key=${apiKey}`
