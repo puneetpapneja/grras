@@ -3,6 +3,7 @@ const prod = process.env.NODE_ENV === 'production'
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const dotenv = require('dotenv-webpack');
 const path = require("path");
 const relative = (target) => path.resolve(__dirname, target);
 module.exports = {
@@ -31,6 +32,15 @@ module.exports = {
   },
   devtool: prod ? undefined : 'source-map',
   plugins: [
+    new dotenv({
+      path: './.env', // load this now instead of the ones in '.env'
+      //safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
+      allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
+      systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
+      silent: true, // hide any errors
+      defaults: false // load '.env.defaults' as the default values if empty.
+      //prefix: 'import.meta.env.', // reference your env variables as 'import.meta.env.ENV_VAR'.
+    }),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
     }),
@@ -58,7 +68,8 @@ module.exports = {
       interfaces: relative('src/interfaces'),    
       hooks: relative('src/hooks'),      
       service: relative('src/service'),      
-      utils: relative('src/utils')      
+      utils: relative('src/utils'),     
+      store: relative('src/store')      
     },
     modules: ['node_modules']
   }

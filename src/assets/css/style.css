@@ -555,7 +555,7 @@
   
   /* Optional: Adjust the arrow indicators */
   .dropdown-item.dropdown-toggle::after {
-    content: " ▸"; /* Add arrow to indicate more options */
+    content: "\f105"; /* Add arrow to indicate more options */
     float: right;
   }
   
@@ -913,3 +913,22 @@ body {
     margin: 20px auto;
   }
   
+  .carousel-control-prev,
+  .carousel-control-next {
+   
+    color: #06BBCC; /* Set the text (icon) color to white */
+    border-radius: 50%; /* Optional: Round the buttons */
+    padding: 10px; /* Optional: Add padding for better button size */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #06BBCC; /* Set the icon (arrows) color to white */
+  }
+
+  .testimonial-text{
+    
+    width: 80%; /* Set the width to 80% of the parent container */
+    margin: 0 auto; /* Center the paragraph */
+
+  }

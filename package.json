@@ -1,5 +1,5 @@
 {
-  "name": "sdd1",
+  "name": "grras",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,10 +23,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/dompurify": "^3.0.5",
+    "@types/jquery": "^3.5.32",
     "@types/react": "^18.2.57",
     "@types/react-dom": "^18.2.19",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.10.0",
+    "dotenv-webpack": "^8.1.0",
     "eslint": "^8.56.0",
     "html-webpack-plugin": "^5.6.0",
     "husky": "^9.0.11",
@@ -41,12 +43,15 @@
     "webpack-dev-server": "^5.0.2"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.3.0",
     "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
     "dompurify": "^3.1.7",
     "i": "^0.3.7",
     "npm": "^10.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^9.1.2",
     "react-router-dom": "^6.26.1"
   }
 }

@@ -76,14 +76,14 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <div className="container-fluid">
           {/* Logo */}
-          <a
-            href="index.html"
+          <Link
+            to="/"
             className="navbar-brand d-flex align-items-center px-4 px-lg-5"
           >
             <h2 className="m-0 text-primary">
               <img src="assets/img/logo.jpg" className="logo_img" alt="Logo" />
             </h2>
-          </a>
+          </Link>
 
           {/* Toggler button for mobile */}
           <button

@@ -7,13 +7,15 @@ const Banner: React.FC = () => {
         <div className="owl-carousel-item col-md-12">
           <img
             className="img-fluid rounded mb-4"
-            src="assets/img/banner-1.jpg"
+            src="assets/img/1.jpg"
+            style={{ height: '400px' }}
             alt=""
           />
         </div>
         <div className="owl-carousel-item col-md-12">
           <img
             className="img-fluid rounded mb-4"
+            style={{ height: '400px' }}
             src="assets/img/10.jpg"
             alt=""
           />
@@ -21,6 +23,7 @@ const Banner: React.FC = () => {
         <div className="owl-carousel-item col-md-12 ">
           <img
             className="img-fluid rounded mb-4"
+            style={{ height: '400px' }}
             src="assets/img/11.jpg"
             alt=""
           />
