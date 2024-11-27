@@ -17,7 +17,11 @@ const Social = () => {
       >
         <i className="fab fa-facebook-f"></i>
       </a>
-      <a className="btn btn-outline-info btn-social" href="">
+      <a
+        className="btn btn-outline-info btn-social"
+        href="https://youtube.com/@ravisarswat1644?si=W2DH1foEWeEyZh2D"
+        target="_blank"
+      >
         <i className="fab fa-youtube"></i>
       </a>
     </>
