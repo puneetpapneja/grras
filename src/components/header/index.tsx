@@ -1,3 +1,4 @@
+import Social from 'components/social'
 import { IPrograms } from 'interfaces/IProgram'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -56,18 +57,7 @@ const Header = () => {
 
           {/* Contact Details - Right */}
           <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-            <a className="btn btn-outline-info btn-social" href="">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a className="btn btn-outline-info btn-social" href="">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a className="btn btn-outline-info btn-social" href="">
-              <i className="fab fa-youtube"></i>
-            </a>
-            <a className="btn btn-outline-info btn-social" href="">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
+            <Social />
           </div>
         </div>
       </div>

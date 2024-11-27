@@ -1,3 +1,4 @@
+import Social from 'components/social'
 import { IPrograms } from 'interfaces/IProgram'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -55,83 +56,16 @@ const Footer = () => {
                 </a>
               </p>
               <div className="d-flex pt-2">
-                <a className="btn btn-outline-light btn-social" href="">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a className="btn btn-outline-light btn-social" href="">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a className="btn btn-outline-light btn-social" href="">
-                  <i className="fab fa-youtube"></i>
-                </a>
-                <a className="btn btn-outline-light btn-social" href="">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
+                <Social />
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <h4 className="text-white mb-3">Gallery</h4>
-              <div className="row g-2 pt-2">
-                <div className="col-4">
-                  <img
-                    className="img-fluid bg-light p-1"
-                    src="assets/img/course-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="col-4">
-                  <img
-                    className="img-fluid bg-light p-1"
-                    src="assets/img/course-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="col-4">
-                  <img
-                    className="img-fluid bg-light p-1"
-                    src="assets/img/course-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="col-4">
-                  <img
-                    className="img-fluid bg-light p-1"
-                    src="assets/img/course-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="col-4">
-                  <img
-                    className="img-fluid bg-light p-1"
-                    src="assets/img/course-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="col-4">
-                  <img
-                    className="img-fluid bg-light p-1"
-                    src="assets/img/course-1.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <h4 className="text-white mb-3">Newsletter</h4>
-              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-              <div className="position-relative mx-auto">
-                <input
-                  className="form-control border-0 w-100 py-3 ps-4 pe-5"
-                  type="text"
-                  placeholder="Your email"
-                />
-                <button
-                  type="button"
-                  className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                >
-                  SignUp
-                </button>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.2487101153915!2d75.74307307468452!3d26.927328776638458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0e5555555%3A0xc45671d79cdb76ba!2sGrras%20Solution%20Pvt%20Ltd%20-%20Advanced%20IT%20Training%20%26%20Certification%20Center!5e0!3m2!1sen!2sin!4v1732709120456!5m2!1sen!2sin"
+                width="500"
+                height="300"
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -144,14 +78,6 @@ const Footer = () => {
                   Grras.com
                 </a>
                 , All Right Reserved.
-              </div>
-              <div className="col-md-6 text-center text-md-end">
-                <div className="footer-menu">
-                  <a href="">Home</a>
-                  <a href="">Cookies</a>
-                  <a href="">Help</a>
-                  <a href="">FQAs</a>
-                </div>
               </div>
             </div>
           </div>

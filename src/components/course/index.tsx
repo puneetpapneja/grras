@@ -1,10 +1,12 @@
 import { ICourse } from 'interfaces/ICourse'
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 const Course: FC<ICourse> = ({
   img = 'assets/img/course-3.jpg',
   timing,
   heading,
+  route,
 }) => {
   return (
     // <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -17,26 +19,26 @@ const Course: FC<ICourse> = ({
       </div>
       <div className="d-flex border-top">
         <small className="flex-fill text-center border-end py-2">
-          <a
-            href="#"
+          <Link
+            to={route || '/'}
             className="flex-shrink-0 btn btn-sm btn-link px-3 border-end"
             style={{ borderRadius: '30px 0 0 30px;' }}
           >
             Read More
-          </a>
+          </Link>
         </small>
         <small className="flex-fill text-center border-end py-2">
           <i className="fa fa-clock text-primary me-2"></i>
           {timing}
         </small>
         <small className="flex-fill text-center py-2">
-          <a
-            href="#"
+          <Link
+            to={route || '/'}
             className="flex-shrink-0 btn btn-sm btn-link px-3"
             style={{ borderRadius: '30px 0 0 30px;' }}
           >
             Join Now
-          </a>
+          </Link>
         </small>
       </div>
     </div>
