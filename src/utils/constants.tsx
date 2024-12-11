@@ -12,10 +12,10 @@ export const SLUGS = {
   DOCKER_CONTAINER_TRANING: 'docker-training',
   AWS_Solutions_Architect_Associate: 'aws-solution-architect',
   DEVOPS: 'devops-training',
-  BCA_DEGREE_PROGRAM: 'programs/bca-training',
-  MCA_DEGREE_PROGRAM: 'programs/mca-traning',
-  SUMMER_INTERNSHIP_TRANING: 'programs/summer-internship',
-  WINTER_INTERNSHIP_TRANING: 'programs/winter-internship',
+  BCA_DEGREE_PROGRAM: 'bca-training',
+  MCA_DEGREE_PROGRAM: 'mca-traning',
+  SUMMER_INTERNSHIP_TRANING: 'summer-internship',
+  WINTER_INTERNSHIP_TRANING: 'winter-internship',
 }
 
 export const COURSE_DETAILS = {
@@ -1035,7 +1035,7 @@ export const COURSES = [
 export const DEGREE_PROGRAMS = [
   {
     name: 'BCA Degree Program',
-    route: `/bca-traning`,
+    route: `programs/${SLUGS.BCA_DEGREE_PROGRAM}`,
     subCourse: [],
   },
   // {
@@ -1047,12 +1047,12 @@ export const DEGREE_PROGRAMS = [
 export const INTERNSHIP_PROGRAMS = [
   {
     name: 'Summer Internship',
-    route: `/courses/${SLUGS.SUMMER_INTERNSHIP_TRANING}`,
+    route: `/programs/${SLUGS.SUMMER_INTERNSHIP_TRANING}`,
     subCourse: [],
   },
   {
     name: 'Winter Internship',
-    route: `/courses/${SLUGS.WINTER_INTERNSHIP_TRANING}`,
+    route: `/programs/${SLUGS.WINTER_INTERNSHIP_TRANING}`,
     subCourse: [],
   },
 ]
