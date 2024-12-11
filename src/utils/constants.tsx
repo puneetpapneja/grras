@@ -12,10 +12,10 @@ export const SLUGS = {
   DOCKER_CONTAINER_TRANING: 'docker-training',
   AWS_Solutions_Architect_Associate: 'aws-solution-architect',
   DEVOPS: 'devops-training',
-  BCA_DEGREE_PROGRAM: 'bca-training',
-  MCA_DEGREE_PROGRAM: 'mca-traning',
-  SUMMER_INTERNSHIP_TRANING: 'summer-internship',
-  WINTER_INTERNSHIP_TRANING: 'winter-internship',
+  BCA_DEGREE_PROGRAM: 'programs/bca-training',
+  MCA_DEGREE_PROGRAM: 'programs/mca-traning',
+  SUMMER_INTERNSHIP_TRANING: 'programs/summer-internship',
+  WINTER_INTERNSHIP_TRANING: 'programs/winter-internship',
 }
 
 export const COURSE_DETAILS = {
