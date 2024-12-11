@@ -11,7 +11,7 @@ const otherRoutes: Array<IRoute> = [
     component: HomePage,
   },
   {
-    path: '/course/:slug',
+    path: '/courses/:slug',
     component: CourseDetailsPage,
   },
   {

@@ -947,47 +947,47 @@ export const COURSES = [
       {
         name: 'RHCSA (Red Hat Certified System Administrator)',
         shortName: 'RHCSA',
-        route: `/course/${SLUGS.RHCSA}`,
+        route: `/courses/${SLUGS.RHCSA}`,
       },
       {
         name: 'RHCE (Red Hat Certified Engineer)',
         shortName: 'RHCE',
-        route: `/course/${SLUGS.RHCE}`,
+        route: `/courses/${SLUGS.RHCE}`,
       },
       {
         name: 'DO188 (Red Hat OpenShift Development I)',
         shortName: 'Red Hat OpenShift Development I',
-        route: `/course/${SLUGS.DO188}`,
+        route: `/courses/${SLUGS.DO188}`,
       },
       {
         name: 'DO280 (Red Hat OpenShift Administration I)',
         shortName: 'Red Hat OpenShift Administration I',
-        route: `/course/${SLUGS.DO280}`,
+        route: `/courses/${SLUGS.DO280}`,
       },
       {
         name: 'DO380 (Red Hat OpenShift Administration II)',
         shortName: 'Red Hat OpenShift Administration II',
-        route: `/course/${SLUGS.DO380}`,
+        route: `/courses/${SLUGS.DO380}`,
       },
       {
         name: 'RH415 (Red Hat Security: Linux in Physical, Virtual, and Cloud)',
         shortName: 'Red Hat Security',
-        route: `/course/${SLUGS.RH415}`,
+        route: `/courses/${SLUGS.RH415}`,
       },
       {
         name: 'RH358 (Red Hat Services Management and Automation)',
         shortName: 'Red Hat Services Management and Automation',
-        route: `/course/${SLUGS.RH358}`,
+        route: `/courses/${SLUGS.RH358}`,
       },
       {
         name: 'DO316 (Red Hat Virtualization with OpenShift)',
         shortName: 'Red Hat Virtualization with OpenShift',
-        route: `/course/${SLUGS.REDHAT_OPENSHIFT}`,
+        route: `/courses/${SLUGS.REDHAT_OPENSHIFT}`,
       },
       {
         name: 'OpenShift AI',
         shortName: 'OpenShift AI',
-        route: `/course/${SLUGS.OPENSHIFT_AI}`,
+        route: `/courses/${SLUGS.OPENSHIFT_AI}`,
       },
     ],
   },
@@ -998,7 +998,7 @@ export const COURSES = [
       {
         name: 'Certified Kubernetes Administrator (CKA)',
         shortName: 'Kubernetes',
-        route: `/course/${SLUGS.CKA}`,
+        route: `/courses/${SLUGS.CKA}`,
       },
     ],
   },
@@ -1009,7 +1009,7 @@ export const COURSES = [
       {
         name: 'Docker Container Training',
         shortName: 'Docker & Podman',
-        route: `/course/${SLUGS.DOCKER_CONTAINER_TRANING}`,
+        route: `/courses/${SLUGS.DOCKER_CONTAINER_TRANING}`,
       },
     ],
   },
@@ -1020,14 +1020,14 @@ export const COURSES = [
       {
         name: 'AWS Solutions Architect – Associate',
         shortName: 'AWS Solutions Architect',
-        route: `/course/${SLUGS.AWS_Solutions_Architect_Associate}`,
+        route: `/courses/${SLUGS.AWS_Solutions_Architect_Associate}`,
       },
     ],
   },
   {
     name: 'DevOps',
     shortName: 'DevOps',
-    route: `/course/${SLUGS.DEVOPS}`,
+    route: `/courses/${SLUGS.DEVOPS}`,
     subCourse: [],
   },
 ]
@@ -1040,19 +1040,19 @@ export const DEGREE_PROGRAMS = [
   },
   // {
   //   name: 'MCA Degree Program',
-  //   route: `/course/${SLUGS.MCA_DEGREE_PROGRAM}`,
+  //   route: `/courses/${SLUGS.MCA_DEGREE_PROGRAM}`,
   //   subCourse: [],
   // },
 ]
 export const INTERNSHIP_PROGRAMS = [
   {
     name: 'Summer Internship',
-    route: `/course/${SLUGS.SUMMER_INTERNSHIP_TRANING}`,
+    route: `/courses/${SLUGS.SUMMER_INTERNSHIP_TRANING}`,
     subCourse: [],
   },
   {
     name: 'Winter Internship',
-    route: `/course/${SLUGS.WINTER_INTERNSHIP_TRANING}`,
+    route: `/courses/${SLUGS.WINTER_INTERNSHIP_TRANING}`,
     subCourse: [],
   },
 ]
