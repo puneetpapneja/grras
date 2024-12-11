@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --port 3000",
-    "build": "set NODE_ENV=production && webpack",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "husky-install": "husky init",
     "precommit": "lint-staged",

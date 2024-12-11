@@ -145,11 +145,11 @@ const Header = () => {
                   <i className="fab fa-whatsapp"></i> {PHONE_NO}
                 </a>
                 <a
-                  href="mailto:info@grras.com"
+                  href="mailto:info@grras.tech"
                   className="text-color-coral"
                   target="_blank"
                 >
-                  <i className="fa fa-envelope-open"></i> info@grras.com
+                  <i className="fa fa-envelope-open"></i> info@grras.tech
                 </a>
               </div>
             </div>
