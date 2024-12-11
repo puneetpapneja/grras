@@ -48,11 +48,11 @@ const Footer = () => {
               </p>
               <p className="mb-2">
                 <a
-                  href="mailto:info@grras.com"
+                  href="mailto:info@grras.tech"
                   className="text-color-white"
                   target="_blank"
                 >
-                  <i className="fa fa-envelope-open"></i> info@grras.com
+                  <i className="fa fa-envelope-open"></i> info@grras.tech
                 </a>
               </p>
               <div className="d-flex pt-2">
@@ -75,7 +75,7 @@ const Footer = () => {
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 &copy;{' '}
                 <a className="border-bottom" href="#">
-                  Grras.com
+                  Grras.tech
                 </a>
                 , All Right Reserved.
               </div>
